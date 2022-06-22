@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Index</title>
+  </head>
+  <body>
+    <div class="title-center">
+      <h1 style="background-color: #a12d5d; padding: 20px; margin-top: 0%"></h1>
+    </div>
+    <h1 class="title-center">Job Application</h1>
+    <div class="container">
+      <h2 class="heading-color">Personal Information</h2>
+
+      <form action="">
+        <div class="grid-container">
+          <label for="name">Name:</label>
+          <div>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="First Name"
+              style="display: inline; width: 48%"
+            />
+
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              placeholder="Last Name"
+              style="display: inline; width: 48%"
+            />
+          </div>
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="abc@abc.com"
+          />
+
+          <label for="education">Education:</label>
+          <select name="education" id="education">
+            <option value="" selected disabled hidden>Please Choose</option>
+            <option value="Matric">Matric</option>
+            <option value="Inter">Inter</option>
+            <option value="Bachelor">Bachelor</option>
+          </select>
+
+          <label for="resume">Resume:</label>
+          <input type="file" name="resume" id="resume" />
+
+          <label for="address1">Address 1:</label>
+          <input type="text" id="address1" name="address1" />
+
+          <label for="address1">Address 2:</label>
+          <input type="text" id="address2" name="address2" />
+
+          <label for="country"></label>
+          <select name="country" id="country">
+            <option value="" selected disabled hidden>Select a Country</option>
+            <option value="Country1">Country1</option>
+            <option value="Country2">Country2</option>
+            <option value="Country3">Country3</option>
+          </select>
+
+          <label for="country"></label>
+          <div>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              placeholder="City"
+              style="max-width: 60%; display: inline"
+            />
+
+            <input
+              type="text"
+              id="state"
+              name="state"
+              placeholder="State"
+              style="max-width: 10%; display: inline"
+            />
+
+            <input
+              type="text"
+              id="zip"
+              name="zip"
+              placeholder="Zip Code"
+              style="width: 15%; display: inline"
+            />
+          </div>
+
+          <label for="phone">Phone Number:</label>
+          <div>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+92"
+              pattern="[0-9]{3}"
+              style="width: 15%; display: inline"
+            />
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="3xxxxxxxxx"
+              pattern="[0-9]{11}"
+              style="width: 81%; display: inline"
+            />
+          </div>
+
+          <label for="hobbies" style="grid-column: 1 / span 2"
+            >What are your hobbies?</label
+          >
+          <input
+            type="text"
+            id="hobbies"
+            name="hobbies"
+            style="grid-column: 1 / span 2"
+          />
+
+          <h2 class="heading-color" style="grid-column: 1 / span 2">
+            Precious/Current Employement Details
+          </h2>
+          <label for="emplyement_detail">Company Name:</label>
+          <input type="text" id="emplyement_detail" name="emplyement_detail" />
+
+          <label for="job">Job Title:</label>
+          <input type="text" id="job" name="job" />
+
+          <label for="duration">How long were you there?</label>
+          <input type="text" id="duration" name="duration" id="duration" />
+
+          <h2 class="heading-color" style="grid-column: 1 / span 2">
+            Reference # 1
+          </h2>
+          <label for="reference1">Name:</label>
+          <input type="text" id="reference1" name="reference1" />
+
+          <label for="reference1_phone">Phone:</label>
+          <input type="text" id="reference1_phone" name="reference1_phone" />
+
+          <h2 class="heading-color" style="grid-column: 1 / span 2">
+            Reference # 2
+          </h2>
+          <label for="reference2">Name:</label>
+          <input type="text" id="reference2" name="reference2" />
+
+          <label for="reference2_phone">Phone:</label>
+          <input type="text" id="reference2_phone" name="reference2_phone" />
+        </div>
+
+        <div>
+          <input class="button" type="submit" value="Apply" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
