@@ -17,23 +17,38 @@
 
       <form action="">
         <div class="grid-container">
-          <label for="name">Name:</label>
-          <div>
-            <input
-              type="text"
-              id="fname"
-              name="fname"
-              placeholder="First Name"
-              style="display: inline; width: 48%"
-            />
+          <label>Name:</label>
 
-            <input
-              type="text"
-              id="lname"
-              name="lname"
-              placeholder="Last Name"
-              style="display: inline; width: 48%"
-            />
+          <div>
+            <div style="display: inline">
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="First Name"
+                style="width: 48%"
+                required
+              />
+            </div>
+
+            <div style="display: inline">
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+                placeholder="Last Name"
+                style="width: 48%"
+                required
+              />
+            </div>
+          </div>
+
+          <label for=""></label>
+          <div style="margin-top: -10px">
+            <small><strong>First Name</strong></small>
+            <small style="position: relative; left: 38%"
+              ><strong>Last Name</strong></small
+            >
           </div>
 
           <label for="email">Email:</label>
@@ -41,11 +56,12 @@
             type="email"
             id="email"
             name="email"
+            required
             placeholder="abc@abc.com"
           />
 
           <label for="education">Education:</label>
-          <select name="education" id="education">
+          <select name="education" id="education" required>
             <option value="" selected disabled hidden>Please Choose</option>
             <option value="Matric">Matric</option>
             <option value="Inter">Inter</option>
@@ -53,30 +69,62 @@
           </select>
 
           <label for="resume">Resume:</label>
-          <input type="file" name="resume" id="resume" />
+          <input type="file" name="resume" id="resume" required />
 
-          <label for="address1">Address 1:</label>
-          <input type="text" id="address1" name="address1" />
+          <label for="address1"></label>
 
-          <label for="address1">Address 2:</label>
-          <input type="text" id="address2" name="address2" />
+          <div style="text-align: center">
+            <input
+              type="text"
+              id="address1"
+              name="address1"
+              style="display: block; width: 98%"
+              required
+            />
+            <small><strong>Address 1</strong></small>
+          </div>
+
+          <label for="address1"></label>
+          <div style="text-align: center">
+            <input
+              type="text"
+              id="address2"
+              name="address2"
+              style="display: block; width: 98%"
+              required
+            />
+            <small><strong>Address 2</strong></small>
+          </div>
 
           <label for="country"></label>
-          <select name="country" id="country">
-            <option value="" selected disabled hidden>Select a Country</option>
-            <option value="Country1">Country1</option>
-            <option value="Country2">Country2</option>
-            <option value="Country3">Country3</option>
-          </select>
 
-          <label for="country"></label>
+          <div style="text-align: center">
+            <select
+              name="country"
+              id="country"
+              style="display: block; width: 98%"
+              required
+            >
+              <option value="" selected disabled hidden>
+                Select a Country
+              </option>
+              <option value="Country1">Country1</option>
+              <option value="Country2">Country2</option>
+              <option value="Country3">Country3</option>
+            </select>
+            <small><strong>Country</strong></small>
+          </div>
+
+          <label for="city"></label>
+
           <div>
             <input
               type="text"
               id="city"
               name="city"
+              style="width: 35%"
+              required
               placeholder="City"
-              style="max-width: 60%; display: inline"
             />
 
             <input
@@ -84,35 +132,52 @@
               id="state"
               name="state"
               placeholder="State"
-              style="max-width: 10%; display: inline"
+              style="width: 35%"
+              required
             />
 
             <input
-              type="text"
+              type="number"
               id="zip"
               name="zip"
               placeholder="Zip Code"
-              style="width: 15%; display: inline"
+              style="width: 20%"
+              required
             />
+          </div>
+
+          <label for=""></label>
+          <div style="margin-top: -10px">
+            <small style="position: relative; left: 15%"
+              ><strong>City</strong></small
+            >
+            <small style="position: relative; left: 47%"
+              ><strong>State</strong></small
+            >
+            <small style="position: relative; left: 70%"
+              ><strong>Zip Code</strong></small
+            >
           </div>
 
           <label for="phone">Phone Number:</label>
           <div>
             <input
-              type="tel"
+              type="text"
               id="phone"
               name="phone"
-              placeholder="+92"
-              pattern="[0-9]{3}"
+              required
+              placeholder="92"
+              pattern="[0-9]{2}"
               style="width: 15%; display: inline"
             />
             <input
-              type="tel"
+              type="text"
               id="phone"
               name="phone"
+              required
               placeholder="3xxxxxxxxx"
               pattern="[0-9]{11}"
-              style="width: 81%; display: inline"
+              style="width: 75%; display: inline"
             />
           </div>
 
@@ -123,6 +188,7 @@
             type="text"
             id="hobbies"
             name="hobbies"
+            required
             style="grid-column: 1 / span 2"
           />
 
@@ -130,31 +196,52 @@
             Precious/Current Employement Details
           </h2>
           <label for="emplyement_detail">Company Name:</label>
-          <input type="text" id="emplyement_detail" name="emplyement_detail" />
+          <input
+            type="text"
+            id="emplyement_detail"
+            name="emplyement_detail"
+            required
+          />
 
           <label for="job">Job Title:</label>
-          <input type="text" id="job" name="job" />
+          <input type="text" id="job" name="job" required />
 
           <label for="duration">How long were you there?</label>
-          <input type="text" id="duration" name="duration" id="duration" />
+          <input
+            type="text"
+            id="duration"
+            name="duration"
+            id="duration"
+            required
+          />
 
           <h2 class="heading-color" style="grid-column: 1 / span 2">
             Reference # 1
           </h2>
           <label for="reference1">Name:</label>
-          <input type="text" id="reference1" name="reference1" />
+          <input type="text" id="reference1" name="reference1" required />
 
           <label for="reference1_phone">Phone:</label>
-          <input type="text" id="reference1_phone" name="reference1_phone" />
+          <input
+            type="number"
+            id="reference1_phone"
+            name="reference1_phone"
+            required
+          />
 
           <h2 class="heading-color" style="grid-column: 1 / span 2">
             Reference # 2
           </h2>
           <label for="reference2">Name:</label>
-          <input type="text" id="reference2" name="reference2" />
+          <input type="text" id="reference2" name="reference2" required />
 
           <label for="reference2_phone">Phone:</label>
-          <input type="text" id="reference2_phone" name="reference2_phone" />
+          <input
+            type="number"
+            id="reference2_phone"
+            name="reference2_phone"
+            required
+          />
         </div>
 
         <div>
